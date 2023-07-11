@@ -11,7 +11,7 @@ public class BancoDeUsurarios {
       BancoDeDados.add(usuario);
     }
 
-    public void autenticar(Usuario usuario){
+    public boolean autenticar(Usuario usuario){
         boolean Status= false;
         for(int i = 0; i <= BancoDeDados.size(), i++){
             if(BancoDeDados.get(i).equals(usuario)){
@@ -22,5 +22,5 @@ public class BancoDeUsurarios {
         return Status;
     }
 
-    
+
 }
